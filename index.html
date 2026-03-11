@@ -1,38 +1,94 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-<header class="main-header">
-    <div class="logo">
-        <i class="bi bi-cup-hot"></i> 
-        <span>Café Delicia</span>
-    </div>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="bi bi-cup-hot"></i>
+                <p class="nome">Café Delicia</p>
+            </div>
+            <ul>
 
-    <nav class="menu-principal">
-        <a href="#">Inicio</a>
-        <a href="#">Productos</a>
-        <a href="#">Sobre Nosotros</a>
-        <a href="#">Contacto</a>
-    </nav>
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Productos</a>
+                </li>
+                <li>
+                    <a href="#">Sobre Nosotros</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+            <div class="carrinho">
+                <i class="bi bi-cart"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="section-banner">
+            <div class="banner">
+                <div class="banner-texto">
+                    <p class="titulo"> Bienvenido a Café Delicia</p>
+                    <p class="subtitulo">El mejor café artesanal y repostería fresca todos los días</p>
+                    <div class="botao">
+                        <button class="botao">Ver Menú</button>
+                    </div>
+                </div>
+            </div>
 
-    <div class="carrinho">
-        <i class="bi bi-cart"></i>
-        <span class="badge">0</span>
-    </div>
-</header>
+        </section>
+        <section class="comida">
+            <div class="texto-abaixo-banner">
+                <p class="titulo1">Nuestros Productos</p>
+                <div class="subi">
+                    <p class="subtitulo1">Descubre nuestra selección de cafés artesanales, repostería fresca y alimentos
+                        deliciosos preparados con los mejores ingredientes</p>
+                </div>
+                <div class="opcoes">
 
-<section class="hero">
-    <div class="hero-content">
-        <h1>Bienvenido a Café Delicia</h1>
-        <p>El mejor café artesanal y repostería fresca todos los días</p>
-        <a href="#" class="btn-menu">Ver Menú</a>
-    </div>
-</section> 
+                    <button class="botao">
+                        <i class="bi bi-cup-hot"></i> <span>Café</span>
+
+                    </button>
+
+
+                    <button class="botao" id="btn-reposteria">
+                     <i class="bi bi-cake2"></i>
+                        <span> Repostería </span>
+                    </button>
+
+
+                    <button class="botao">
+                        <i class="bi bi-fork-knife"></i>
+                        <span>Comida</span>
+                    </button>
+                </div>
+            </div>
+
+       <div class="lista-produtos">
+        
+       </div>
+            </div>
+
+        </section>
+
+    </main>
+
 </body>
+
 </html>

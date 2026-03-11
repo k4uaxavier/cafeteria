@@ -1,101 +1,179 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+p {
+  font-family: inter;
 }
-.main-header {
-    background-color: #7a3611; 
-    color: white;              /* Cor das letras e ícones */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;       /* 15px em cima/baixo e 50px nas laterais */
-    position: sticky; /*faz o menu ficar fixo no topo da página quando rolar para baixo*/
-    top: 0; /* define a posicao do menu no topo da página */
-    z-index: 1000; /* Garante que o menu não fique atrás da imagem */
+
+
+* {
+
+  padding: 0;
+  margin: 0;
+}
+
+li a {
+
+  text-decoration: none;
+  color: #ffff;
+  font-size: 20px;
+  padding: 25px;
+}
+
+ul {
+  display: flex;
+  /*ativa a propriedade de alinhamento*/
+  flex-direction: row;
+  /*coloca os elementos na horizontal*/
+  font-size: 10px;
   
-
 }
 
-.logo {
+li {
+  list-style: none;
+  /*remove os pontos das lista*/
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #7a3611;
+}
+
+.logo{
     display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 30px;
+    color: #ffff;
+
 }
+
 .carrinho{
-    font-size: 24px;
-    position: relative; /* O ponto de referência */
+    font-size: 30px;
+    color: #ffff;
 }
 
-.badge {
-    position: absolute; /* O elemento que flutua */
-    top: -5px;          /* Sobe um pouco */
-    right: -10px;       /* Empurra para a direita */
-    background-color: #d93025; /* Vermelho do alerta */
-    color: white;
-    font-size: 10px;
-    padding: 2px 6px;
-    border-radius: 50%; /* Deixa o fundo redondinho */}
+.banner {
+  height: 90vh;
+  width: 100%;
+  background-image: url("assets/photo-1521017432531-fbd92d768814\ \(1\).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+ }
 
+ .titulo{
+    font-size: 60px;
+    color:#ffff;
+ }
 
-.menu-principal {
-    display: flex;
-    gap: 20px; /* Espaço entre os links do menu */
-
-}
-
-.menu-principal a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
- 
-}
-.menu-principal a:hover {
-    color: #f8b86e; /* Cor amarela para o hover do menu */
-}
-
-.hero {
-    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),  url("https://images.unsplash.com/photo-1521017432531-fbd92d768814?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBzaG9wJTIwaW50ZXJpb3J8ZW58MXx8fHwxNzY1NDAzNzE0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral&quot");
-    background-size: cover;
-    background-position: center;
-    height: 65vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;  
-    margin-bottom: 30px;
-    flex-direction: column;
-
-
-
-}
-
-.hero p {
-    font-size: 25px;
-    font-weight: normal; /* Para contrastar com o H1 negrito */
-    margin-bottom: 30px; /* Dá o espaço para o botão não grudar */
-    max-width: 1000px;    /* Evita que o texto fique largo demais em telas grandes */
-}
-.btn-menu{
-    background-color: #e07600;
-    padding: 15px 35px;
-    border-radius: 10px;
-    color: white;
- text-decoration: none;
- font-size: 14px;
-
-}
-.btn-menu:hover {
-    background-color: red; 
-
-}
+ .subtitulo{
+    font-size: 20px;
+    color: #ffff;
    
+ }
+ .subi{
+  width: 800px;
+ }
 
-h1{
-    font-size: 50px;
-    margin-bottom: 10px
+ .banner-texto{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+ }
+  
+ .botao{
+    background-color: #e07600;
+    color: white;
+ border-radius: 10px;
+ padding: 5px 10px;
+ border: none;
+ }
+
+ .texto-abaixo-banner{
+align-items: center;
+    display: flex;
+    flex-direction: column;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+ 
+ 
+ }
+
+ .titulo1{
+  font-size: 50px;
+  color: #7a3611;
+  font-weight: bold;
+ }
+
+ .subtitulo1{
+  font-size: 20px;
+  text-align: center;
+ }
+
+ .opcoes{
+ display: flex;
+ flex-direction: row;
+ width: 700px;
+ justify-content: space-evenly;
+
+ }
+
+
+.card{
+   height: 200px;
+   width: 500px;
+   border: 1px solid black;
+   border-radius: 100px;
+   background-color: #7a3611;
 }
+
+.img-produto{
+width: 100%;
+height: 180px;
+object-fit: cover;
+}
+
+.card-img{
+  width: 500px;
+   height: 200px;
+}
+
+.card-estrutura{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+
+}
+
+.card-texto{
+  padding: 15px;
+}
+
+button{
+  background: #f97316;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card-preco{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 10px;
+}
+
+.valor{
+  color: #e07600;
+}
+ 
+ 
